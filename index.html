@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
     <link href="styles.css" rel="stylesheet">
 </head>
+
 <body>
 
-<div class = "centreDiv">
-<img id="cookie" src="img/cookie.png" alt="cookie">
+    <div class="centerDiv">
+        <img id="cookie" src="img/cookie.png" alt="cookie">
 
-<p id ="display">Score: 0</p>
-<p id ="playerStats">click power: 1, crit chance: 0%, crit multiplier: 2</p>
+        <p id="display">Score: 0</p>
+        <progress id="health" value="100" max ="100" ></progress>
+        <p id="playerStats">click power: 1, crit chance: 0%, crit multiplier: 2, autoclicker number: 0</p>
+        <button id="clickUpgrade" class="buttons">upgrade click: 15</button>
+        <button id="autoClickUpgrade" class="buttons">upgrade autoclick: 1000</button>
+        <button id="critChanceUpgrade" class="buttons">upgrade critical chance: 100</button>
+        <button id="critValueUpgrade" class="buttons">upgrade critical multiplier: 1000</button>
+    </div>
+    <div class="gameLog" id="gameLog">Log:</div>
 
-<button id="clickUpgrade">upgrade click: 15</button>
-<button id="autoClickUpgrade">upgrade autoclick: 15</button>
-<button id="critChanceUpgrade">upgrade critical chance: 100</button>
-<button id="critValueUpgrade">upgrade critical multiplier: 1000</button>
-</div>
-<div class="gameLog" id ="gameLog">Log:</div>
 
-<script src="scripts.js"></script>
+    <script src="scripts.js"></script>
 </body>
 
 </html>
